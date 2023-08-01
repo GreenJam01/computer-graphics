@@ -1,0 +1,425 @@
+frame 20 10 # размеры всего изображения из расчета одна единица - две клетки
+# первый рисунок
+model 4.25 4.25 8.5 8.5# центр в точке (1.5, 1), размеры 3x2
+color 0 255 0 # цвет зеленый
+thickness 3 # толщина линии 3
+
+# голова
+color 255 0 0 # цвет красный
+thickness 2   # толщина 2
+path 23       # 23 точки (22 отрезка)
+0.5 3. # от левой щеки вверх до уха
+1. 4.5 # левое ухо слева снизу вверх
+0.5 6. # левое ухо слева
+0.5  7.5 # левое ухо верх слева
+1. 8. # левое ухо верх середина
+1.5 8. # левое ухо верх справа
+2. 7.5 # левое ухо справа сверху вниз
+1.5  6. # левое ухо справа до макушки
+1.5 4.5 # макушка
+3. 4.5 # правое ухо слева снизу вверх
+3. 6. # правое ухо слева
+2.5 7.5 # правое ухо верх слева
+3. 8. # правое ухо верх середина
+3.5 8. # правое ухо верх справа
+4. 7.5 # правое ухо сверху вниз
+4. 6. # правое ухо справа
+3.5 4.5 # от правого уха вниз до щеки
+4. 3. # правая скула
+3.5 1.5 # подбородок справа
+2.5 1. # подбородок снизу
+2. 1. # подбородок слева
+1. 1.5 # левая скула
+0.5 3.
+
+# туловище
+color 120 120 120 # цвет серый
+thickness 3     # толщина 3
+
+
+path 22         # 22 точки (21 отрезок)
+4. 3. # спина от головы вправо
+5.5 3.5 # спина верх
+7. 3.5 # спина сверху до хвоста
+7.5 2.5 # хвост сверху
+8. 2.5 # хвост справа
+8. 2. # хвост низ справа налево
+7.5 2. # задняя нога справа сверху вниз
+7.5 0.5 # задняя нога низ
+6.5 0.5 # задняя нога слева
+6.5 1. # между задних ног
+6. 1. # левая задняя нога справа
+6. 0.5 # левая задняя нога низ
+5. 0.5 # левая задняя нога слева
+5. 1. # между задними и передними ногами
+4. 1. # правая передняя нога справа
+4. 0.5 # правая передняя нога низ
+3. 0.5 # правая передняя нога слева
+3. 1. # между передних ног
+2.5 1. # передняя нога справа
+2.5 0.5 # передняя нога низ
+1.5 0.5 # передняя нога слева
+1.5 1.25  
+
+# глаза
+color 0 255 0 # цвет зеленый
+thickness 4   # толщина 4
+
+# левый глаз
+path 5
+1.5 3.5 # левый глаз слева сверху вниз
+1.5 3. # левый глаз низ
+2.  3. # левый глаз справа
+2. 3.5 # левый глаз верх
+1.5 3.5
+
+# правый глаз
+path 5
+2.5 3.5 # правый глаз слева
+2.5 3. # правый глаз снизу
+3. 3. # правый глаз справа
+3. 3.5 # правый глаз сверху
+2.5 3.5  
+
+# ушные раковины
+color 0 0 0 # цвет черный
+thickness 2   # толщина 2
+
+# левая ушная раковина
+path 2
+1. 5.5 
+1. 7.
+
+# правая ушная раковина
+path 2
+3.5 5.5 
+3.5 7.
+
+# нос
+color 0 0 255 # цвет синий
+thickness 3   # толщина 3
+path 4
+2. 2.5 # нос сверху
+2.5 2.5 # нос справа
+2.25 2. # нос слева 
+2. 2.5 
+
+# преобразования и размещения по описанию
+pushTransform
+scale 0.5
+pushTransform 
+rotate -90
+translate 6 0
+translate 10 10
+figure
+popTransform
+
+pushTransform 
+rotate -90
+translate 6 0
+rotate -30
+translate 10 10
+figure
+popTransform
+
+pushTransform 
+rotate -90
+translate 6 0
+rotate -60
+translate 10 10
+figure
+popTransform
+
+pushTransform 
+rotate -90
+translate 6 0
+rotate -90
+translate 10 10
+figure
+popTransform
+
+pushTransform 
+rotate -90
+translate 6 0
+rotate -120
+translate 10 10
+figure
+popTransform
+
+pushTransform 
+rotate -90
+translate 6 0
+rotate -150
+translate 10 10
+
+figure
+popTransform
+
+pushTransform 
+rotate -90
+translate 6 0
+rotate -180
+translate 10 10
+figure
+popTransform
+
+
+
+
+
+
+popTransform
+model 7.25 4.75 14.5f 9.5f# центр в точке (1.5, 1), размеры 3x2
+color 255 0 0 # цвет красный
+thickness 3 # толщина линии 3
+path 5      # 23 точки (22 отрезка) #1	lowest left
+		1. 1. 
+		1.5 0.5 
+		2. 1. 
+		1.5 1.5 								    
+		1. 1. 
+path 5       # 23 точки (22 отрезка) # 2 middle left
+		0.5 6. 
+		1. 5.5 
+		1.5 6. 
+		1. 6.5 
+		0.5 6.	
+path 9      # 23 точки (22 отрезка) #big bubble left	
+		1.5 7.5 
+		1.5 8. 
+		2. 8.5 
+	    2.5 8.5 
+		3. 8. 
+		3. 7.5 
+		2.5 7. 
+		2. 7. 
+		1.5 7.5 
+path 9     # 23 точки (22 отрезка) #big bubble middle
+		7. 6.5  
+		7. 7.5 
+		7.5 8. 
+		8.5 8. 
+		9. 7.5 
+		9. 6.5 
+		8.5 6. 
+		7.5 6. 
+	    7. 6.5 
+path 5       # 23 точки (22 отрезка) #high diamond
+		12. 6. 
+		11.5 6.5 
+	    12. 7. 
+		12.5 6.5 
+		12. 6. 
+path 5      # 23 точки (22 отрезка)#low diamond
+		12.5 5.5
+		13.5 4.5 
+		12.5 3.5 
+		11.5 4.5 
+		12.5 5.5 
+path 15       # 23 точки (22 отрезка)#ish#head#nose tip
+		1. 4. 
+		1.5 5. 
+		2. 5.5 
+		3. 6. 
+	    4.5 6.  
+		5.5 5. 
+		4.5 4. 
+		5.5 3. 
+		4.5 2. 
+		5. 1.5 
+		3. 2. 
+		1.5 3. 
+		2. 3.5 
+		1.5 4. 
+		1. 4. 
+path 9      # 23 точки (22 отрезка) #eye
+		3. 5. 
+		3.5 5. 
+		4. 4.5 
+		4. 4. 
+		3.5 3.5 
+		3. 3.5 
+		2.5 4. 
+		2.5 4.5 
+		3. 5. 
+path 4       # 23 точки (22 отрезка) #pupil
+		3. 3.5
+		3. 4. 
+		3.5 4. 
+		3.5 3.5 
+color 255 0 0 # цвет красный
+thickness 2   # толщина 2
+path 3       # 23 точки (22 отрезка)#high ig#1
+		3. 6. 
+		4.5 8.5 
+		4.5 7.5 
+path 4       # 23 точки (22 отрезка)
+		3.5 6. 
+		4.5  7.5 
+		5. 8. 
+		5 7 
+path 3       # 23 точки (22 отрезка) #3
+		4 6 
+		5.5 7.5 
+		5.5 5.7 
+color 255 0 0 # цвет красный 4
+		4.5 6.  
+		5.5 6.5 
+		6. 7. 
+		6. 6.
+path 4       # 23 точки (22 отрезка) 5
+		5.5 5.75
+		6. 6. 
+		6.5 6.5 
+		6.5 5.5 
+path 3       # 23 точки (22 отрезка)	6	
+		6.5  5.5 
+		7. 6. 
+		7. 5.25 
+path 6      # 23 точки (22 отрезка)		#body
+		4.5  6. 	
+		6.5 5.5 
+		7.5 5. 	
+		8.5 4.5 
+		9  3.5 
+		5 1.5 
+path 17       # 23 точки (22 отрезка)#tail
+		7.5  5 
+		9.5 6 
+		10 7 
+		10.5 7.5 
+		11.5 8 
+		12 8 
+		11.5 7.5 
+		10.5 4.5 
+		11 4. 
+		11.5 3. 
+		12 1.5 
+		12.5 1. 
+		12. 1. 
+		11. 1.5 
+		10.5 2. 
+		10. 3. 
+		9. 3.5 
+path 5     # 23 точки (22 отрезка)
+		5. 2.5 
+		8.5  2.5 #low ig
+	    9. 2. 
+		9. 1.
+		9 1.5 
+path 2
+		9. 1. 
+		8 0.5   
+path 3
+	    5. 2.5 
+		6.5 1. 
+		8 0.5   
+scale 0.5# масштабирование до большого прямоугольника
+pushTransform # сохранить отправную точку
+translate 8 0
+translate 10 10
+figure
+popTransform
+
+pushTransform
+rotate 0
+translate 8 0
+rotate -30
+translate 10 10
+figure
+popTransform
+
+pushTransform
+rotate 0
+translate 8 0
+rotate -60
+translate 10 10
+figure
+popTransform
+
+pushTransform
+rotate 0
+translate 8 0
+rotate -90
+translate 10 10
+figure
+popTransform
+
+pushTransform
+rotate 0
+translate 8 0
+rotate -120
+translate 10 10
+figure
+popTransform
+
+pushTransform
+rotate 0
+translate 8 0
+rotate -150
+translate 10 10
+figure
+popTransform
+
+pushTransform
+rotate 0
+translate 8 0
+rotate -180
+translate 10 10
+figure
+popTransform
+
+pushTransform # сохранить отправную точку
+translate 4 0
+translate 10 10
+figure
+popTransform
+
+pushTransform
+rotate 0
+translate 4 0
+rotate -30
+translate 10 10
+figure
+popTransform
+
+pushTransform
+rotate 0
+translate 4 0
+rotate -60
+translate 10 10
+figure
+popTransform
+
+pushTransform
+rotate 0
+translate 4 0
+rotate -90
+translate 10 10
+figure
+popTransform
+
+pushTransform
+rotate 0
+translate 4 0
+rotate -120
+translate 10 10
+figure
+popTransform
+
+pushTransform
+rotate 0
+translate 4 0
+rotate -150
+translate 10 10
+figure
+popTransform
+
+pushTransform
+rotate 0
+translate 4 0
+rotate -180
+translate 10 10
+figure
+popTransform
+
